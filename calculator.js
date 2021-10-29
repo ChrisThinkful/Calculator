@@ -16,21 +16,25 @@ operatorBtn.forEach((button) => {
 
 clearBtn.addEventListener('click', clear)
 deleteBtn.addEventListener('click', clearAll)
-equalBtn.addEventListener('click', evaluate)
+equalBtn.addEventListener('click', calculate)
 
 function appendNumber(number){
     input.textContent += number;
 }
 
 function appendOperator(operator){
-    history.textContent = `${input.textContent} ${operator}`;
+    let firstNum = input.textContent;
+    let operand = operator;
+    history.textContent = `${firstNum} ${operand}`;
+    console.log(`First number: ${firstNum}; Operand: ${operand}`)
     input.textContent = '';
 }
 
-
-function evaluate(){
-    return operate()
+function calculate({target}){
+    let secondNum = input.textContent;
+    history.textContent += ` ${secondNum} ${target.textContent}`
 }
+
 
 function clear(){
     input.textContent = '';
