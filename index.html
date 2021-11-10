@@ -11,32 +11,32 @@
     <div class="main">
         <div class="calculator">
             <div class="display">
-                <p id="history">37 +</p>
-                <p id="current">32</p>
+                <p data-previous-operand id='previous-operand'>37 +</p>
+                <p data-current-operand id='current-operand'>32</p>
             </div>
-            <div class="button__grid">
-                <button id="clear">Clear</button>
-                <button id="delete">Delete</button>
-                <button class='number__btn' id="7">7</button>
-                <button class='number__btn' id="8">8</button>
-                <button class='number__btn' id="9">9</button>
-                <button class='operator__btn' id="multiply">x</button>
-                <button class='number__btn' id="4">4</button>
-                <button class='number__btn' id="5">5</button>
-                <button class='number__btn' id="6">6</button>
-                <button class='operator__btn' id="divide">/</button>
-                <button class='number__btn' id="1">1</button>
-                <button class='number__btn' id="2">2</button>
-                <button class='number__btn' id="3">3</button>
-                <button class='operator__btn' id="add">+</button>
-                <button class='number__btn' id="decimal">.</button>
-                <button class='number__btn' id="0">0</button>
-                <button class='equal__btn' id="equal">=</button>
-                <button class='operator__btn' id="subtract">-</button>
+            <div class="button-grid">
+                <button data-allClear>AC</button>
+                <button data-delete>DEL</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation>x</button>
+                <button data-number >4</button>
+                <button data-number >5</button>
+                <button data-number >6</button>
+                <button data-operation>÷</button>
+                <button data-number >1</button>
+                <button data-number >2</button>
+                <button data-number >3</button>
+                <button data-operation>+</button>
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button data-equal>=</button>
+                <button data-operation>-</button>
             </div>
         </div>
     </div>
     <footer>Copyright &copy; Chris Clark</footer>
-    <script src="calculator.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
