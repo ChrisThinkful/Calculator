@@ -20,10 +20,12 @@ class Calculator {
     }
 
     delete() {
+        // erase most recent character
         this.currentOperand = this.currentOperand.toString().slice(0,-1)
     }
 
     appendNumber(number) {
+        // prevents repeated decimals
         if (number === '.' && this.currentOperand.includes('.')) return
         this.currentOperand = this.currentOperand.toString() + number.toString();
     }
@@ -43,6 +45,7 @@ class Calculator {
         const prev = parseFloat(this.previousOperand)
         const curr = parseFloat(this.currentOperand)
         if (isNaN(prev) || isNaN(curr)) return
+        /* Switch statement replaces need for helper operation functions below */
         switch(this.operation) {
             case '+':
                 computation = prev + curr
@@ -105,6 +108,10 @@ delButton.addEventListener('click', () => {
     calculator.updateDisplay()
 })
 
+// Helper functions I thought I was going to use for the calculator
+
+// -------------------------
+
 // function add(a,b) {
 //     return a + b;
 // }
@@ -120,3 +127,4 @@ delButton.addEventListener('click', () => {
 // function divide(a,b) {
 //     return a / b;
 // }
+// -------------------------
