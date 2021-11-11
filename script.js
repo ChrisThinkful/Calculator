@@ -14,6 +14,7 @@ class Calculator {
     }
 
     clear() {
+        // clears the entire display
         this.currentOperand = ''
         this.previousOperand = ''
         this.operation = undefined
