@@ -1,9 +1,5 @@
 # Calculator
-This project is another of the projects from **The Odin Project's Foundations** series. It is built using HTML5, CSS3, and JavaScript.
 
-## To-Dos
+A calculator created using HTML, CSS, and JS.
 
-fill out the ReadMe
-add user stories 
-add screenshots
- 
+[Live Demo] (https://christhinkful.github.io/Calculator/)
